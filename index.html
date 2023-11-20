@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Choy's E-Commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Choy's E-Commerce</h1>
+    </header>
+    
+    <main>
+        <section class="product">
+            <img src="img/a1 all white.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1.</p>
+            <p class="price">R99.99</p>
+            <button onclick="addToCart('Product 1', 99.99)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="img/a1 07.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2.</p>
+            <p class="price">R79.99</p>
+            <button onclick="addToCart('Product 2', 79.99)">Add to Cart</button>
+        </section>
+
+        <!-- Add more product sections as needed -->
+
+    </main>
+
+    <aside>
+        <h2>Shopping Cart</h2>
+        <ul id="cart">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: <span id="total">R0.00</span></p>
+    </aside>
+
+    <script src="app.js"></script>
+</body>
+</html>
